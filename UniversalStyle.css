@@ -1,0 +1,40 @@
+a {
+	color:#605E5E;
+	text-decoration: none;
+}
+li {
+	display: inline-block;
+}
+li a {
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+nav ul {
+	padding-left: 100px;
+}
+.leftBorder {
+	border-left: 1px solid rgba(160,160,160,.61);
+}
+.header {
+	font-size: 70px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+body {
+	font-family: "Raleway", sans-serif;
+	color:#605E5E;
+}
+.content {
+	width: 800px;
+	margin-left: auto;
+	margin-right:auto;
+}
+img {
+	width: 100%;
+}

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Home | Jessica McDaniel</title>
+		<link rel="stylesheet" href="UniversalStyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+	</head>
+	<body style="padding-top: 8px;">
+		<div class="content">
+			<header>
+				<nav>
+					<ul class="center">
+						<li><a href="index.html">Home</a></li>
+						<li class="leftBorder"><a href="cv.html">C.V.</a></li>
+						<li class="leftBorder"><a href="about.html">About</a></li>
+						<li class="leftBorder"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<hr>
+				<h1 class="header">Jessica McDaniel</h1>
+			</header>
+			<img src="images/Doorway.jpg" style="height: 600px; object-fit: cover;">
+			<footer>
+				<p style="color: grey; text-align: center;">&copy; 2019<span id="year"></span> Jessica McDaniel. All rights reserved.</p>
+			</footer>	
+		</div>
+	</body>
+</html>
+<script>
+	var date = new Date().getFullYear();
+	if (date > 2019) {
+		document.getElementById("year").innerHTML = " - " + date;
+	}
+</script>
