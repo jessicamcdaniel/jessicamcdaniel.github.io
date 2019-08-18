@@ -70,12 +70,12 @@ footer p {
 }
 
 #contactSidePicture {
-	height: 300px;
-	width: 300px;
+	width: 350px;
+	height: 500px;
 	object-fit: cover; 
 	object-position: 0 0; 
 	padding: 0 20px;
-	object-position: 20% 0;
+	object-position: 25% 0;
 }
 
 .underlined {
