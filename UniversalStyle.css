@@ -98,6 +98,10 @@ footer p {
 	padding: 10px;
 }
 
+.column.third {
+	width: 33.33%;
+}
+
 .currentPage {
 	color: black;
 }
