@@ -20,25 +20,30 @@ ul {
 }
 
 nav ul li {
-	display: inline-block;
+	display: block;
+	float: left;
+	margin-bottom: 10px;
 }
 nav ul li a {
-	display: block;
 	padding: 0 10px;
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
 }
 nav ul {
-	padding-left: 100px;
+	padding-left: 190px;
+	padding-bottom: 20px;
 }
 
 footer {
 	padding-bottom: 50px;
 }
-
+hr {
+	clear: both;
+}
 .leftBorder {
 	border-left: 1px solid rgba(160,160,160,.61);
+	/*border-right: 1px solid rgba(160,160,160,.61);*/
 }
 .header {
 	font-size: 70px;
