@@ -43,7 +43,6 @@ hr {
 }
 .leftBorder {
 	border-left: 1px solid rgba(160,160,160,.61);
-	/*border-right: 1px solid rgba(160,160,160,.61);*/
 }
 .header {
 	font-size: 70px;
@@ -82,7 +81,6 @@ footer p {
 	width: 350px;
 	height: 500px;
 	object-fit: cover; 
-	object-position: 0 0; 
 	padding: 0 20px;
 	object-position: 25% 0;
 }
@@ -118,4 +116,15 @@ i {
 
 .linkIconPadding {
 	padding-left: 70px;
+}
+
+#gallery p {
+	text-align: center;
+}
+#gallery img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;  
+	margin: 10px auto;
+	display: block;
 }
