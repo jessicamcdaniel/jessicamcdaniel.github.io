@@ -4,7 +4,8 @@
 	<!-- Created by Jordan Bierman -->
 	<!-- jordan.c.bierman@gmail.com -->
 	<title>Gallery | Jessica McDaniel</title>
-	<link rel="stylesheet" href="UniversalStyle.css">
+	<link rel="stylesheet" type="text/css" href="UniversalStyle.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,43 +27,15 @@
 		<div id="gallery">
 			<div class="row">
 				<div class="column third">
-					<img src="images/Pancakes.jpg">
+					<img src="images/Doorway.jpg" alt="yeet">
+					<p >center test</p>
+				</div>
+				<div class="column third">
+					<img src="images/Doorway.jpg" alt="ya">
 					<p>center test</p>
 				</div>
 				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
-					<p>center test</p>
-				</div>
-				<div class="column third">
-					<img src="images/Pancakes.jpg">
+					<img src="images/Doorway.jpg" alt="wow">
 					<p>center test</p>
 				</div>
 			</div>
@@ -71,11 +44,35 @@
 			<p>&copy; 2019<span id="year"></span> Jessica McDaniel. All rights reserved.</p>
 		</footer>	
 	</div>
+
+	<!-- The Modal -->
+	<div id="modal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="modalImage">
+	  <div id="caption"></div>
+	</div>
 </body>
 </html>
 <script>
 	var date = new Date().getFullYear();
 	if (date > 2019) {
 		document.getElementById("year").innerHTML = " - " + date;
+	}
+</script>
+<script type="text/javascript">
+	var modal = document.getElementById("modal");
+	var modalImage = document.getElementById("modalImage");
+	var modalCaption = document.getElementById("caption");
+
+	var images = document.getElementById("gallery").getElementsByTagName("img");
+	for (var i = 0; i < images.length; i++) {
+		images[i].onclick = function() {
+			modal.style.display = "block";
+			modalImage.setAttribute("src", this.getAttribute("src"));
+			modalCaption.innerHTML = this.getAttribute("alt");
+		}
+	}
+	document.getElementsByClassName("close")[0].onclick = function() { 
+		modal.style.display = "none";
 	}
 </script>
