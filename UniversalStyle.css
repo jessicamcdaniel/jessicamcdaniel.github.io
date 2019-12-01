@@ -124,10 +124,9 @@ i {
 #gallery img {
 	width: 200px;
 	height: 200px;
-	object-fit: cover;  
+	object-fit: contain;  
 	margin: 10px auto;
 	display: block;
-	border-radius: 5px;
 	cursor: pointer;
 	transition: .3s;
 }
