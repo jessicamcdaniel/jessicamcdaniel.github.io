@@ -5,6 +5,7 @@
 		<title>Home | Jessica McDaniel</title>
 		<link rel="stylesheet" href="UniversalStyle.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="onLoad.js"></script>
 	</head>
 	<body style="padding-top: 8px;">
 		<div class="content">
@@ -13,8 +14,8 @@
 					<ul class="center">
 						<li><a href="index.html" class="currentPage">Home</a></li>
 						<li class="leftBorder"><a href="cv.html">C.V.</a></li>
-						<li class="leftBorder"><a href="gallery.html">Gallery</a></li>
 						<li class="leftBorder"><a href="hiraeth.html">Hiraeth</a></li>
+						<li class="leftBorder"><a href="otherWorks.html">Other Works</a></li>
 						<li class="leftBorder"><a href="about.html">About</a></li>
 						<li class="leftBorder"><a href="contact.html">Contact</a></li>
 					</ul>
@@ -22,16 +23,12 @@
 				<hr>
 				<h1 class="header">Jessica McDaniel</h1>
 			</header>
-			<img src="images/Doorway.jpg" style="height: 600px; object-fit: cover;">
+			<img src="Images/Assets/Doorway.jpg" style="height: 600px; object-fit: cover;">
 			<footer>
-				<p>&copy; 2019<span id="year"></span> Jessica McDaniel. All rights reserved.</p>
+				<div id="copyright">
+				<p>&copy; Jessica McDaniel. All rights reserved.</p>
+			</div>
 			</footer>	
 		</div>
 	</body>
 </html>
-<script>
-	var date = new Date().getFullYear();
-	if (date > 2019) {
-		document.getElementById("year").innerHTML = " - " + date;
-	}
-</script>

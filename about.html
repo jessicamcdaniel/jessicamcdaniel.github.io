@@ -4,6 +4,7 @@
 	<title>About | Jessica McDaniel</title>
 	<link rel="stylesheet" href="UniversalStyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="onLoad.js"></script>
 </head>
 <body>
 	<div class="content">
@@ -12,8 +13,8 @@
 				<ul class="center">
 					<li><a href="index.html">Home</a></li>
 					<li class="leftBorder"><a href="cv.html">C.V.</a></li>
-					<li class="leftBorder"><a href="gallery.html">Gallery</a></li>
 					<li class="leftBorder"><a href="hiraeth.html">Hiraeth</a></li>
+					<li class="leftBorder"><a href="otherWorks.html">Other Works</a></li>
 					<li class="leftBorder"><a href="about.html" class="currentPage">About</a></li>
 					<li class="leftBorder"><a href="contact.html">Contact</a></li>
 				</ul>
@@ -23,7 +24,7 @@
 		</header>
 		<div class="row">
 			<div class="column">
-				<img src="images/HEADSHOT.jpg" id="aboutSidePicture">
+				<img src="Images/Assets/HEADSHOT.jpg" id="aboutSidePicture">
 			</div>
 			<div class="column">
 				<p>Jessica McDaniel combines photography and traditional drawing in an unexpected way to show the relationship between reality and memory. McDaniel's cinematic scenes are windows to the past and the lingering presence of the people who once inhabited the spaces. She photographs abandoned houses, prints high quality images, and proceeds to draw figurative elements directly onto the image to create memories left behind. She is interested in the ideas of memory, loss, nostalgia, and homesickness.</p>
@@ -31,14 +32,10 @@
 			</div>
 		</div>
 		<footer>
-			<p>&copy; 2019<span id="year"></span> Jessica McDaniel. All rights reserved.</p>
+			<div id="copyright">
+				<p>&copy; Jessica McDaniel. All rights reserved.</p>
+			</div>
 		</footer>
 	</div>
 </body>
 </html>
-<script>
-	var date = new Date().getFullYear();
-	if (date > 2019) {
-		document.getElementById("year").innerHTML = " - " + date;
-	}
-</script>
