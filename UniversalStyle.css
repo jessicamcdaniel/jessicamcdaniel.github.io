@@ -31,7 +31,7 @@ nav ul li a {
 	line-height: 60px;
 }
 nav ul {
-	padding-left: 190px;
+	padding-left:175px;
 	padding-bottom: 20px;
 }
 
@@ -43,7 +43,6 @@ hr {
 }
 .leftBorder {
 	border-left: 1px solid rgba(160,160,160,.61);
-	/*border-right: 1px solid rgba(160,160,160,.61);*/
 }
 .header {
 	font-size: 70px;
@@ -82,13 +81,17 @@ footer p {
 	width: 350px;
 	height: 500px;
 	object-fit: cover; 
-	object-position: 0 0; 
 	padding: 0 20px;
 	object-position: 25% 0;
 }
 
 .underlined {
 	text-decoration: underline;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
 }
 
 .row::after {
@@ -98,13 +101,8 @@ footer p {
 }
 
 .column {
-	float: left;
-	width: 50%;
 	padding: 10px;
-}
-
-.column.third {
-	width: 33.33%;
+	flex-basis:100%	;
 }
 
 .currentPage {
@@ -118,4 +116,28 @@ i {
 
 .linkIconPadding {
 	padding-left: 70px;
+}
+
+#gallery img {
+	width: 200px;
+	height: 140px;
+	object-fit: cover;  
+	margin: 10px auto;
+	display: block;
+	cursor: pointer;
+	transition: .3s;
+}
+
+#gallery p {
+	font-size:.875em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+#gallery .title {
+	font-style: italic;
+}
+
+#gallery img:hover {
+	opacity: 0.7;
 }

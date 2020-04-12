@@ -3,11 +3,11 @@
 <head>
 	<!-- Created by Jordan Bierman -->
 	<!-- jordan.c.bierman@gmail.com -->
+	<title>Contact | Jessica McDaniel</title>
 	<link rel="stylesheet" href="UniversalStyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5a5b5162ea.js"></script>
-	<title>Contact | Jessica McDaniel</title>
-
+	<script type="text/javascript" src="onLoad.js"></script>
 </head>
 <body>
 	<div class="content">
@@ -16,8 +16,8 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li class="leftBorder"><a href="cv.html">C.V.</a></li>
-					<li class="leftBorder"><a href="gallery.html">Gallery</a></li>
 					<li class="leftBorder"><a href="hiraeth.html">Hiraeth</a></li>
+					<li class="leftBorder"><a href="otherWorks.html">Other Works</a></li>
 					<li class="leftBorder"><a href="about.html">About</a></li>
 					<li class="leftBorder"><a href="contact.html" class="currentPage">Contact</a></li>
 				</ul>
@@ -30,7 +30,7 @@
 
 		<div class="row">
 			<div class="column">
-				<img src="images/cruel.jpg" id="contactSidePicture">
+				<img src="Images/Assets/cruel.jpg" id="contactSidePicture">
 			</div>
 			<div class="column">
 				<p>Please feel free to reach out with any inquiries on pricing, commissions, or other general questions.</p>
@@ -47,14 +47,10 @@
 		<!-- Footer -->
 
 		<footer>
-			<p>&copy; 2019<span id="year"></span> Jessica McDaniel. All rights reserved.</p>
+			<div id="copyright">
+				<p>&copy; Jessica McDaniel. All rights reserved.</p>
+			</div>
 		</footer>
 	</div>
 </body>
 </html>
-<script>
-	var date = new Date().getFullYear();
-	if (date > 2019) {
-		document.getElementById("year").innerHTML = " - " + date;
-	}
-</script>
