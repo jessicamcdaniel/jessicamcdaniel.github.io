@@ -42,6 +42,14 @@ function setCopyrightText() {
 	element.innerHTML = copyrightText
 }
 
+function hideSpinner() {
+	var cover = document.getElementById("cover");
+
+	if (cover != null) {
+		cover.style.visibility='hidden';
+	}
+}
+
 //Credit to Simon Willison for the idea behind this!
 
 function addLoadEvent(func) {
@@ -61,3 +69,4 @@ function addLoadEvent(func) {
 
 addLoadEvent(setCopyrightText);
 addLoadEvent(setUpGallery);
+addLoadEvent(hideSpinner);
