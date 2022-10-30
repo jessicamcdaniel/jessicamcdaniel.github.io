@@ -1,3 +1,26 @@
+function setUpGallery() {
+	var gallery = document.getElementById("gallery");
+	var modal = document.getElementById("modal");
+	var modalImage = document.getElementById("modalImage");
+	var modalCaption = document.getElementById("caption");
+
+	if (!gallery || !modal || !modalImage || !modalCaption) {
+		return;
+	}
+
+	var images = document.getElementById("gallery").getElementsByTagName("img");
+	for (var i = 0; i < images.length; i++) {
+		images[i].onclick = function() {
+			modal.style.display = "block";
+			modalImage.setAttribute("src", this.getAttribute("src"));
+			modalCaption.innerHTML = this.getAttribute("alt");
+		}
+	}
+	document.getElementsByClassName("close")[0].onclick = function() { 
+		modal.style.display = "none";
+	}
+}
+
 function setCopyrightText() {
 	
 	startYear = 2019;
@@ -19,6 +42,14 @@ function setCopyrightText() {
 	element.innerHTML = copyrightText
 }
 
+function hideSpinner() {
+	var cover = document.getElementById("cover");
+
+	if (cover != null) {
+		cover.style.visibility='hidden';
+	}
+}
+
 //Credit to Simon Willison for the idea behind this!
 
 function addLoadEvent(func) {
@@ -37,3 +68,5 @@ function addLoadEvent(func) {
 }
 
 addLoadEvent(setCopyrightText);
+addLoadEvent(setUpGallery);
+addLoadEvent(hideSpinner);
