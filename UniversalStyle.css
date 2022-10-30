@@ -134,10 +134,21 @@ i {
 	text-align: center;
 }
 
-#gallery .title {
+.title {
 	font-style: italic;
 }
 
 #gallery img:hover {
 	opacity: 0.7;
+}
+
+#gallery img.vertical {
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.galleryBanner {
+	margin-bottom: 40px;
+	padding: 0px 34px;
 }
